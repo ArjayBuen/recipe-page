@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    /* font-family: 'Young Serif', serif; */
+}
+body{
+    background: hsl(30, 54%, 90%);
+}
+h1, h2{
+    font-family: 'Young Serif', serif;
+    font-weight: normal;
+    color: hsl(14, 45%, 36%);
+}
+h1, h2, h3{
+    margin-bottom: 10px;
+}
+ul, ol{
+    padding: 0 30px;
+}
+ul{
+    line-height: 1.9;
+}
+ol{
+    color: hsl(14, 45%, 36%);
+}
+p{
+    line-height: 1.5;
+}
+ol li{
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+p, li{
+    font-size: 14px;
+    color: hsl(30, 10%, 34%);  
+}
+li{
+    padding-left: 10px;
+}
+span{
+    font-weight: bold;
+}
+.container{
+    background: hsl(0, 0%, 100%);
+    max-width: 50%;
+    margin: 60px auto;
+    padding: 25px;
+    border-radius: 20px;
+}
+.img-content, .recipe, .time, .ingredients, .instructions,
+.ingredients ul, .instructions ol{
+    margin-bottom: 20px;
+}
+.img-content img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.recipe h1{
+    color: hsl(24, 5%, 18%);
+    
+}
+ 
+.time{
+    background: hsl(330, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.time h3{
+    color: hsl(332, 51%, 32%);
+    
+}
+.ingredients, .instructions{
+    border-bottom: 1px solid  hsl(30, 18%, 87%);
+}
+
+.nutrition .item{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    padding: 10px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.nutrition .item:last-child{
+    border: none;
+}
+.nutrition .item .value{
+    color: hsl(14, 45%, 36%);
+}
+.attribution{
+    text-align: center;
+}
+
+@media (max-width:800px){
+    .container{
+        max-width: 80%;
+        margin: 60px auto;
+    }
+    .img-content img{
+        border-radius: none;
+    }
+}
+@media (max-width:600px){
+    .container{
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+        /* padding: 0; */
+    }
+    .img-content img{
+        width: 100%; 
+        border-radius: 0;
+    }
+    /* .recipe, .time, .ingredients, .instructions, .nutrition{
+        padding:25px ;
+    } */
+}
